@@ -7,8 +7,8 @@ import Vision
 
 
 /**
- Controller that allows user to upload a picture of the spider,
- then provides a prediction of that spider
+ Controller that allows user to upload a picture of the animal,
+ then provides a prediction of that animal
  */
 class CNNUploadPhoto: UIViewController, UINavigationControllerDelegate, CLLocationManagerDelegate {
     
