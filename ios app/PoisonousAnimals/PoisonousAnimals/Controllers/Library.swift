@@ -50,15 +50,14 @@ class Library: UIViewController {
         
         // retrieve the poisonousness level of that spider
         // map it to certain color
-        // show the poisonousness level and introduction of the spider
-        let toxicity = ConstantsEnum.spiderMapping[sender.currentTitle!]!
-        //introduction.text = ConstantsEnum.spiderMapping[sender.currentTitle!]! + "\n" +
-                         //ConstantsEnum.spiderIntro[sender.currentTitle!]!
+        // show the poisonousness level and introduction of the animals
+        let toxicity = ConstantsEnum.toxicityMapping[sender.currentTitle!]!
         
-        introduction.text = ConstantsEnum.spiderMapping[sender.currentTitle!]! + "\n" +
-                            ConstantsEnum.spiderIntro[sender.currentTitle!]!
         
-        //let attributedString: NSMutableAttributedString = NSMutableAttributedString(string: introduction.text!)
+        introduction.text = ConstantsEnum.toxicityMapping[sender.currentTitle!]! + "\n" +
+                            ConstantsEnum.animalsIntro[sender.currentTitle!]!
+        
+        
         
         let attributedString: NSMutableAttributedString = NSMutableAttributedString(string: introduction.text!)
         
