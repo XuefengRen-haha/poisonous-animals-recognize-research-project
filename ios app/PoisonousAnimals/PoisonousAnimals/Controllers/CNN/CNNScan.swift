@@ -114,14 +114,13 @@ class CNNScan: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
             
             // create the label text components
             let predclass = "\(Observation.identifier)"
-            let predclass1 = ConstantsEnum.cnn_transfer[predclass]!
             let predconfidence = String(format: "%.02f", Observation.confidence * 100)
-            let toxicity = ConstantsEnum.spiderMapping[predclass1]!
+            let toxicity = ConstantsEnum.toxicityMapping[predclass]!
             
             // set the label text
             DispatchQueue.main.async(execute: {
                 self.label.textColor = ConstantsEnum.colorMapping[toxicity]!
-                self.label.text = "\(predclass1) \(predconfidence)%\n" +
+                self.label.text = "\(predclass) \(predconfidence)%\n" +
                                   "Level: \(toxicity)"
             })
         }
