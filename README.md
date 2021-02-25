@@ -1,7 +1,7 @@
 # Poisonous Animals Recognition Resesrch Project
 This repository contains three parts including image classification, object detection and ios app.
 
-- A video demo of our app:   
+- A video demo of our app:   https://youtu.be/sXQvv7y9MMM
 
 - The object detection models are trained by [TensorFlow Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection))
 
