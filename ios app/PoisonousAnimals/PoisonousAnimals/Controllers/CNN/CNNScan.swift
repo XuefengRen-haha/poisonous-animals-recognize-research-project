@@ -6,8 +6,8 @@ import AVFoundation
 import Vision
 
 /**
- Controller that allows user to scan a spider,
- then provides a prediction of that spider in real time
+ Controller that allows user to scan a animal,
+ then provides a prediction of that animal in real time
  */
 class CNNScan: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
     
