@@ -8,8 +8,8 @@ import UIKit
 import Vision
 
 /**
- Controller that allows user to scan multiple spiders,
- then provides a prediction of spiders in real time
+ Controller that allows user to scan multiple animals,
+ then provides a prediction of animals in real time
  */
 class SSDScan: UIViewController {
     
