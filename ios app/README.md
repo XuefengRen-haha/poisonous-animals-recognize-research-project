@@ -1,7 +1,7 @@
 # Poisonous Animals Recognition iOS App
 This repository contains swift scripts and Core ML models for our real-time poisonous animals recognition app  
 
-A video demo of our app:   
+A video demo of our app:   https://youtu.be/sXQvv7y9MMM
 
 ## Image Classification Mode
 Offers two functions:   
@@ -9,7 +9,7 @@ Offers two functions:
 - Real-time classification from camera feed 
 - Display both animal type and toxicity level with three colours(green, orange, red)
 ## Object Detection Mode
-- Locating and classifying multiple poisonous animals by taking a photo or supplying a photo from library
+- Locating and classifying multiple poisonous animals with their locations by taking a photo or supplying a photo from library
 - Real-time detection from camera feed 
 - Display poisonous animals types, toxicity level and bounding boxes indicate animals' locations
 ## Library
