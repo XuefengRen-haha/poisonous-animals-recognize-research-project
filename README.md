@@ -3,7 +3,7 @@ This repository contains three parts including image classification, object dete
 
 - A video demo of our app:   https://youtu.be/sXQvv7y9MMM
 
-- The object detection models are trained by [TensorFlow Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection))
+- The object detection models are trained by [TensorFlow Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection)
 
 - Image labelling tool used in this project is [LabelImg](https://github.com/tzutalin/labelImg)
 
