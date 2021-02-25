@@ -7,8 +7,8 @@ import Vision
 import CoreMedia
 
 /**
- Controller that allows user to upload a picture of spiders,
- then provides a prediction of spiders
+ Controller that allows user to upload a picture of animals,
+ then provides a prediction of animals
  */
 class SSDUploadPhoto: UIViewController, UINavigationControllerDelegate {
     
@@ -159,13 +159,13 @@ class SSDUploadPhoto: UIViewController, UINavigationControllerDelegate {
                 // The labels array is a list of VNClassificationObservation objects,
                 // with the highest scoring class first in the list.
                 let bestClass = prediction.labels[0].identifier
-                let bestClass1 = ConstantsEnum.ssd_transfer["\(bestClass)"]!
+                
                 let confidence = prediction.labels[0].confidence
                 
                 // Show the bounding box with label.
                 //let label = String(format: "%@ %.1f", bestClass, confidence * 100)
                 let predconfidence = String(format: "%.1f", confidence * 100)
-                let label = "\(bestClass1) \(predconfidence)"
+                let label = "\(bestClass) \(predconfidence)"
                 let color = colors[bestClass] ?? UIColor.red
                 boundingBoxViews[i].show(frame: rect, label: label, color: color)
             } else {
