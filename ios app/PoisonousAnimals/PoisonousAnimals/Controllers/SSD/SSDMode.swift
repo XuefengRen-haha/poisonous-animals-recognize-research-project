@@ -3,7 +3,7 @@
 import UIKit
 
 /**
- The controller for the advanced mode page
+ The controller for the object detection mode page
  - contains two buttons
  - redirect users to scan/upload photo part
  */
