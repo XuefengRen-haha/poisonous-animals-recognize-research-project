@@ -5,7 +5,7 @@ import SafariServices
 
 /**
  The controller for the landing page
- - contains four buttons
+ - contains three buttons
  - redirect users to three different parts
  */
 class LandingPage: UIViewController {
