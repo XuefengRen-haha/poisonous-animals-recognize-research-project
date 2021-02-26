@@ -29,13 +29,11 @@ class CNNUploadPhoto: UIViewController, UINavigationControllerDelegate, CLLocati
         self.dismiss(animated: true, completion: nil)
     }
     
-    /** latitude of the user's location */
-    var lat:String?
     
-    /** longitude of the user's location */
-    var lng:String?
     
-    /** spider's name in the prediction result */
+    
+    
+    /** animal's name in the prediction result */
     var spiderName:String!
     
     /** alert telling users that information is sent to database successfully */
@@ -47,7 +45,7 @@ class CNNUploadPhoto: UIViewController, UINavigationControllerDelegate, CLLocati
     override func viewDidLoad() {
         super.viewDidLoad()
         // initiate the reference and create a child object
-        //refSpider = Database.database().reference().child("SpiderWithLocation");
+        
         // request to use the information of users' location
         locationManager.requestAlwaysAuthorization()
         if CLLocationManager.locationServicesEnabled(){
@@ -95,16 +93,7 @@ class CNNUploadPhoto: UIViewController, UINavigationControllerDelegate, CLLocati
         present(picker, animated: true)
     }
     
-    /**
-     Capture the latitude and longitude of the user
-     - parameter manager: CL location manager
-     - parameter locations: an array of CL location
-     */
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let locValue:CLLocationCoordinate2D = manager.location!.coordinate
-        lat = locValue.latitude.description
-        lng = locValue.longitude.description
-    }
+    
 
 }
 
@@ -138,12 +127,7 @@ extension CNNUploadPhoto: UIImagePickerControllerDelegate {
             })
         }
         
-        // create a Core Video pixel buffer which is an image buffer that holds pixels in main memory
-        // Applications generating frames, compressing or decompressing video, or using Core Image
-        // can all make use of Core Video pixel buffers
-        // guard let pixelBuffer: CVPixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
         
-        // execute the request
         try? VNImageRequestHandler(cvPixelBuffer: image, options: [:]).perform([request])
     }
     
