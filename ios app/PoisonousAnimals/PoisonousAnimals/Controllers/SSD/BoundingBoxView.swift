@@ -4,7 +4,7 @@ import Foundation
 import UIKit
 
 /**
- The bounding box that surrounding spiders during prediction,
+ The bounding box that surrounding animals during prediction,
  which are captured by object detector
  */
 class BoundingBoxView {
