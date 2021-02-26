@@ -19,7 +19,7 @@ class CNNScan: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
         self.dismiss(animated: true, completion: nil)
     }
     
-    // create a label to hold the spider name and confidence
+    // create a label to hold the animal name and confidence
     let label: UILabel = {
         let label = UILabel()
         label.textColor = .white
