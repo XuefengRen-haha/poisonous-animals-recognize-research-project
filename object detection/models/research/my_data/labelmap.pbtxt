@@ -1,36 +1,36 @@
 item {
   id: 1
-  name: 'Lowland Copperhead'
+  name: 'Blue Tongued Lizard'
 }
 
 item {
   id: 2
-  name: 'Lowland Copperhead'
+  name: 'Redback Spider'
 }
 
 item {
   id: 3
-  name: 'Lowland Copperhead'
+  name: 'Tarantula Spider'
 }
 
 item {
   id: 4
-  name: 'Lowland Copperhead'
+  name: 'European Wasp'
 }
 
 item {
   id: 5
-  name: 'Lowland Copperhead'
+  name: 'Long Legs Spider'
 }
 
 item {
   id: 6
-  name: 'Lowland Copperhead'
+  name: 'Australian Bee'
 }
 
 item {
   id: 7
-  name: 'Lowland Copperhead'
+  name: 'Red Bellied Black Snake'
 }
 
 item {
@@ -40,5 +40,5 @@ item {
 
 item {
   id: 9
-  name: 'Lowland Copperhead'
+  name: 'Carpet Python'
 }
