@@ -3,7 +3,7 @@
 import UIKit
 
 /**
- Controller of the Spider Gallery page
+ Controller of the animals library page
  */
 class Library: UIViewController {
     
@@ -27,9 +27,9 @@ class Library: UIViewController {
     }
     
     /**
-     Magnify the spider photo selected by users,
-     and show information of that spider
-     - parameter sender: the button showing a spider, selected by users
+     Magnify the animal photo selected by users,
+     and show information of that animal
+     - parameter sender: the button showing a animal, selected by users
      */
     @IBAction func spiderSelected(_ sender: UIButton) {
         // retrieve the image title selected by user
@@ -48,7 +48,7 @@ class Library: UIViewController {
         let gesture = UITapGestureRecognizer(target: self, action: #selector(SpiderGallery.closeIntro))
         vImg.addGestureRecognizer(gesture)
         
-        // retrieve the poisonousness level of that spider
+        // retrieve the toxicity level of that spider
         // map it to certain color
         // show the poisonousness level and introduction of the animals
         let toxicity = ConstantsEnum.toxicityMapping[sender.currentTitle!]!
